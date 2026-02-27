@@ -21,6 +21,33 @@ Kustomize helps you change Kubernetes files without editing them directly. Think
 - Basic understanding of Kubernetes (pods, deployments)
 - A text editor 
 
+## Project structure
+```
+.
+├── README.md
+├── patches
+│   ├── README.md
+│   ├── base
+│   │   ├── deploy.yml
+│   │   └── kustomization.yml
+│   └── overlays
+│       ├── dev
+│       │   ├── kustomization.yml
+│       │   └── replicas.yml
+│       └── stage
+│           ├── kustomization.yml
+│           └── replicas.yml
+└── transforms
+    ├── README.md
+    ├── base
+    │   ├── deploy.yml
+    │   └── kustomization.yml
+    └── overlays
+        ├── dev
+        │   └── kustomization.yml
+        └── stage
+            └── kustomization.yml
+```
 ## 📚 References
 
 - [Kustomize Official Docs](https://kustomize.io/)
