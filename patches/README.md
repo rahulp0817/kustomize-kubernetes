@@ -1,4 +1,4 @@
-# Patches
+# Patches 🚀
 
 This directory demonstrates two methods for patching Kubernetes resources using Kustomize:
 
