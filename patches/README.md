@@ -1,4 +1,4 @@
-# Patches Directory README
+# Patches
 
 This directory demonstrates two methods for patching Kubernetes resources using Kustomize:
 
@@ -9,20 +9,20 @@ Both approaches modify the `replicas` field of a `Deployment` defined in `base/d
 
 ---
 
-## Structure
+## Project Structure
 
 ```
 patches/
-  base/
-    deploy.yml          # original deployment
-    kustomization.yml   # base kustomization referencing deploy.yml
-  overlays/
-    dev/
-      kustomization.yml
-      replicas.yml      # YAML patch example (dev uses YAML)
-    stage/
-      kustomization.yml
-      replicas.yml      # JSON patch example (stage uses JSON)
+├── base/
+│   ├── deploy.yml            # original deployment
+│   └── kustomization.yml     # base kustomization referencing deploy.yml
+└── overlays/
+    ├── dev/
+    │   └── replicas.yml      # YAML patch example (dev uses YAML)
+    |   └── kustomization.yml
+    └── stage/
+        └── replicas.yml      # JSON patch example (stage uses JSON)
+        └── kustomization.yml
 ```
 
 > The YAML file in `overlays/dev/replicas.yml` contains a direct Kubernetes patch while the

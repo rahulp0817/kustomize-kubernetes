@@ -4,7 +4,7 @@ A step-by-step guide to managing Kubernetes manifests for multiple environments 
 
 ## 📁 Project Structure
 ```
-kustomize/
+transformers/
 ├── base/
 │   ├── deploy.yml
 │   └── kustomization.yml
