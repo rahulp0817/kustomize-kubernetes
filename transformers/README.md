@@ -3,7 +3,7 @@
 A step-by-step guide to managing Kubernetes manifests for multiple environments (`dev` and `stage`) using **Kustomize** — no Helm required.
 
 ## 📁 Project Structure
-
+```
 kustomize/
 ├── base/
 │   ├── deploy.yml
@@ -13,7 +13,7 @@ kustomize/
     │   └── kustomization.yml
     └── stage/
         └── kustomization.yml
-
+```
 ## 🚀 Step-by-Step Implementation
 
 ### Step 1 — Create Namespaces
