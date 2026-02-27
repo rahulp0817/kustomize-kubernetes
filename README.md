@@ -21,5 +21,11 @@ Kustomize helps you change Kubernetes files without editing them directly. Think
 - Basic understanding of Kubernetes (pods, deployments)
 - A text editor 
 
+## 📚 References
+
+- [Kustomize Official Docs](https://kustomize.io/)
+- [kubectl kustomize reference](https://kubectl.docs.kubernetes.io/references/kustomize/)
+
+
 Need help? Check the README in each folder for detailed explanations and examples. 
 Happy Kustomizing! 🎉
