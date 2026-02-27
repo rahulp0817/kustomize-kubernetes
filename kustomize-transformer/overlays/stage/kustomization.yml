@@ -1,0 +1,8 @@
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+
+resources:
+# if using gihub use github/amazon/product -> this type
+- ../../base
+
+namePrefix: stage-
