@@ -1,0 +1,5 @@
+# JSON approach
+
+- op: replace
+  path: /spec/replicas
+  value: 4
